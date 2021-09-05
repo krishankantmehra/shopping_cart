@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+:root{
+  --primaryColor:#e68600;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  word-wrap:break-word;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#carouselExampleControls{
+  width:100%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.crousel{
   display: flex;
-  flex-direction: column;
+  align-self: center;
+  justify-content: space-around;
+}
+
+
+.carousel-item img{
+  height: 65vh;
+  width: 50vw;
+  object-fit: contain;
+}
+
+
+.mynavbar{
+  position: sticky;
+  top :0px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5em;
+  align-items:center;
+  
+}
+
+.cartElements{
+  display:grid;
+  grid-template-columns: 40% 30% 20% auto;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
+}
+.modal-header{
+  color: #e68600;
+}
+#cartSize{
+  position: absolute;
+  font-size: small;
+  background-color: var(--primaryColor);
+  padding: 0px 3px 0px 3px;
+  border-radius: 5px;
+  transform: translateX(20px) translateY(2px);
+
+}
+#exampleModal{
+  font-size: 1.5em;
+  width: 90vw;
 }
 
-.App-link {
-  color: #61dafb;
+#itemPrice{
+  color: var(--primaryColor);
+}
+.Products{
+  display:  grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px,350px));
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  justify-content: space-around;
+}
+.card{
+  
+   text-align: center;
+  border: 1px solid grey;
+  transition: 100ms ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.card:hover h5,.card:hover p{
+  opacity: 50%; 
 }
+
+
+.card:hover button{
+  opacity: 100%;
+}
+
+.addToCart{
+ 
+  opacity: 0%;
+  background-color: var(--primaryColor);
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+  
+}
+
