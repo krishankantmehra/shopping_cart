@@ -22,12 +22,11 @@ body{
 
 
 .mynavbar{
-  position: sticky;
-  top :0px;
+
   display: flex;
   justify-content: space-between;
-  font-size: 1.5em;
-  align-items:center;
+  font-size: 1.7em;
+  align-items:auto;
   
 }
 
@@ -68,7 +67,7 @@ body{
 .card{
   
    text-align: center;
-  border: 1px solid grey;
+  border: 1px solid rgb(182, 182, 182);
   transition: 100ms ease;
 }
 
@@ -76,8 +75,13 @@ body{
 .card:hover h5,.card:hover p{
   opacity: 50%; 
 }
-
-
+.card:hover {
+  border: 1px solid black;
+  padding: 10px;
+}
+.card:hover img{
+  opacity: 0.8;
+}
 .card:hover button{
   opacity: 100%;
 }
@@ -90,6 +94,6 @@ body{
   right: 0;
   top: 0;
   border: none;
-  
+  z-index: 1;
 }
 

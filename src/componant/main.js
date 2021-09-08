@@ -23,7 +23,7 @@ class Main extends Component {
         console.log(temp)
     }
     componentWillUnmount= ()=>{
-        localStorage.removeItem('data')
+        localStorage.setItem('data',[])
     }
 
     additem=async(product) =>{
@@ -77,7 +77,7 @@ class Main extends Component {
         this.setState(
             {
                 cart:temp
-            }
+            } 
         )
         localStorage.setItem('data',JSON.stringify(this.state.cart))
     }

@@ -1,7 +1,5 @@
 import React from "react";
-import { Component } from "react";
-import Inventory from './Inventory.json'
-import Navbar from './Navbar'
+import Inventory from './Inventory.json';
 
 async function check(item,cart){
    var list = document.getElementsByClassName("addToCart")

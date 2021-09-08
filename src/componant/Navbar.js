@@ -19,6 +19,7 @@ class Navbar extends Component{
         super()
         this.state ={
             len:cart.length
+
         }
     }
 
@@ -43,12 +44,12 @@ class Navbar extends Component{
 
     render(){
        return(
-        <div>
+        <div className="mynav">
          <div className="mynavbar ">
              <div>
                  <i className="fa fa-bars"></i>
              </div>
-             <div><b>Comphy Furnitures</b></div>
+             <div><b>Comphy Life</b></div>
                 <div>
                 
                     <button type="button" className="btn" style={{fontSize:"1.1em",padding:"4px",float:"right"}}data-bs-toggle="modal" data-bs-target="#exampleModal">
