@@ -96,4 +96,7 @@ body{
   border: none;
   z-index: 1;
 }
-
+.btn1 {
+   background-color: transparent;
+   border: none;
+}

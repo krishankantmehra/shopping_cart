@@ -52,7 +52,7 @@ class Navbar extends Component{
              <div><b>Comphy Life</b></div>
                 <div>
                 
-                    <button type="button" className="btn" style={{fontSize:"1.1em",padding:"4px",float:"right"}}data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button type="button" className="btn1" style={{fontSize:"1.1em",padding:"4px",float:"right"}}data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <i className="fa fa-shopping-cart"></i>
                     </button>
 
