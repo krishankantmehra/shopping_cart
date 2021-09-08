@@ -3,6 +3,16 @@
 }
 body{
   word-wrap:break-word;
+  font-size: minmax(10px,20px);
+}
+
+@media screen and (max-width:520px) {
+   *{
+     font-size: 3vw;
+   }
+   .btn1{
+     width: 3vw;
+   }
 }
 #carouselExampleControls{
   width:100%;
@@ -31,15 +41,20 @@ body{
 }
 
 .cartElements{
-  display:grid;
-  grid-template-columns: 40% 30% 20% auto;
-  justify-content: space-around;
-  align-items: center;
   
+  display:grid;
+  grid-template-columns: 30px 30% 20% 20% auto;
+  row-gap: 1px;
+  justify-content:space-around;
+  align-items: center;
+  overflow:auto;
+  text-align: center;
 }
+
 .modal-header{
   color: #e68600;
 }
+
 #cartSize{
   position: absolute;
   font-size: small;

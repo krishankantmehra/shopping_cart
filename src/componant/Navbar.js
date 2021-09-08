@@ -1,47 +1,9 @@
 import React, { Component } from 'react';
 import Cartitem from './Cartitems';
 
-var cart = [];
-
-
-setInterval(() => {
-    var temp = JSON.parse(localStorage.getItem('data'))
-    if(cart == null){
-       cart = []
-    }
-    
-    //console.log(cart);
-}, 1000);
 
 
 class Navbar extends Component{
-    constructor(){
-        super()
-        this.state ={
-            len:cart.length
-
-        }
-    }
-
-    
-    update(){
-        
-        setInterval(() => {
-           
-                //console.log(this.state.len)
-                this.setState(()=>{
-                    this.state.len = cart.length;
-                });
-                
-            }, 1000)
-        
-        }
-        
-       
-    
-    
-
-
     render(){
        return(
         <div className="mynav">

@@ -23,7 +23,7 @@ class Main extends Component {
         console.log(temp)
     }
     componentWillUnmount= ()=>{
-        localStorage.setItem('data',[])
+        localStorage.removeItem('data')
     }
 
     additem=async(product) =>{
@@ -55,9 +55,9 @@ class Main extends Component {
                 cart :[]
             }
         )
-        localStorage.setItem('data',[])
+        localStorage.removeItem('data',[])
         console.log("closing")
-        localStorage.setItem('data',JSON.stringify(this.state.cart))
+        // localStorage.setItem('data',JSON.stringify(this.state.cart))
     }
 
     increment = (id)=>{
