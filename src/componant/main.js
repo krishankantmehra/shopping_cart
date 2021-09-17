@@ -11,7 +11,7 @@ class Main extends Component {
     }
 
     componentDidMount = ()=>{
-        //localStorage.removeItem('data');
+        
         let temp = JSON.parse(localStorage.getItem('data'));
         if(temp == null)temp = [];
 

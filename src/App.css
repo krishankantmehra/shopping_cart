@@ -21,6 +21,7 @@ body{
   display: flex;
   align-self: center;
   justify-content: space-around;
+  margin-top:50px;
 }
 
 
@@ -31,20 +32,12 @@ body{
 }
 
 
-.mynavbar{
 
-  display: flex;
-  justify-content: space-between;
-  font-size: 1.7em;
-  align-items:auto;
-  
-}
 
 .cartElements{
   
   display:grid;
-  grid-template-columns: 30px 30% 20% 20% auto;
-  row-gap: 1px;
+  grid-template-columns: 40px 30% 20% 20% auto;
   justify-content:space-around;
   align-items: center;
   overflow:auto;
@@ -87,19 +80,17 @@ body{
 }
 
 
-.card:hover h5,.card:hover p{
-  opacity: 50%; 
-}
 .card:hover {
   border: 1px solid black;
   padding: 10px;
 }
 .card:hover img{
-  opacity: 0.8;
+  opacity: 0.5;
 }
 .card:hover button{
   opacity: 100%;
 }
+
 
 .addToCart{
  

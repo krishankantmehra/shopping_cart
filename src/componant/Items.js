@@ -28,9 +28,9 @@ function Items(props){
           <div className="Products">
                {Inventory.map((item,i) => (
                    
-                    <div className="card" onMouseOver={()=>check(item,props.cart)}>
+                    <div className="card shadow m-3" onMouseOver={()=>check(item,props.cart)}>
                         
-                        <button  className="addToCart" onClick={()=>props.add(item)} >Add</button>
+                        <button  className="addToCart shadow" onClick={()=>props.add(item)} >Add</button>
 
                         <div id="cardBody"> 
                         <img src={item.data.location}  className="card-img-top" alt="image not found"/>
