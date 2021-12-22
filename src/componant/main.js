@@ -20,7 +20,7 @@ class Main extends Component {
                 cart:temp
             }
         )
-        console.log(temp)
+        
     }
     componentWillUnmount= ()=>{
         localStorage.removeItem('data')

@@ -20,7 +20,7 @@ class Cartitem extends Component{
                         <div className="modal-header">
                             <h5 className="modal-title" id="exampleModalLabel">Your Cart</h5>
                             <button type="button" className="btn1" data-bs-dismiss="modal" aria-label="Close">
-                                <i class="fa fa-close"></i>
+                                <i className="fa fa-close"></i>
                             </button>
                         </div>
                         
@@ -31,7 +31,7 @@ class Cartitem extends Component{
                             {this.props.cart.map((item, i) => (
                                 <div>
                                    <div className="cartElements" >
-                                        <img src={item.data.location} style={{width:"100%"}}/>
+                                        <img src={item.data.location} alt="Not found" style={{width:"100%"}}/>
                                         <div>{item.data.name}</div>
                                         <div>{item.data.price}</div>
                                         <div style={{display:'flex',alignItems:'center'}}>
