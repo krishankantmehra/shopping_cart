@@ -6,7 +6,7 @@ remove items in cart and manage their quantity
 individually. It uses JSON file for data of available items on site.
 
 ## Run
-run command
+run NPM command
 
 ```
    npm start
