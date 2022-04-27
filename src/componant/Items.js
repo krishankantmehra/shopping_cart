@@ -1,24 +1,6 @@
 import React from "react";
 import Inventory from './Inventory.json';
 
-async function check(item,cart){
-   var list = document.getElementsByClassName("addToCart")
-   
-   for(let i = 0;i<list.length;i++){
-    let flag  = true;
-    cart.forEach(k =>{
-        if(item.key === k.key){
-            list[i].innerHTML = "In the Cart";
-            flag = false;
-        }
-        
-    }
-    
-
-    )
-    if(flag)list[i].innerHTML = "Add to Cart";
-   }
-}
 
 function Items(props){
       
@@ -28,7 +10,7 @@ function Items(props){
           <div className="Products">
                {Inventory.map((item,i) => (
                    
-                    <div className="card shadow m-3"  data-bs-toggle="modal" data-bs-target = {"#details" + item.key}   onMouseOver={()=>check(item,props.cart)} key={i}>
+                    <div className="card shadow m-3"  data-bs-toggle="modal" data-bs-target = {"#details" + item.key}  key={i}>
                         
                         {/* <button  className="addToCart shadow" data-bs-toggle="modal" data-bs-target = "#details" onClick={()=>props.add(item)} >Add</button> */}
                         
@@ -55,7 +37,7 @@ function Items(props){
                                     </div>
                                 </div>
                                 <div className="modal-footer">
-                                    <button className="btn btn-primary" onClick={()=>props.add(item)} >Add to cart</button>
+                                    <button  className="btn btn-primary" onClick={()=>props.add(item)} >Add to cart</button>
                                     <button className="btn btn-secondary">Close</button>
                                 </div>
                             </div>
