@@ -29,9 +29,9 @@ class Cartitem extends Component{
                         {/*Cart Items*/}
                         <div className="modal-body" style={{width:"100%"}}>
                             {this.props.cart.map((item, i) => (
-                                <div>
+                                <div key = {i}> 
                                    <div className="cartElements" >
-                                        <img src={item.data.location} alt="Not found" style={{width:"100%"}}/>
+                                        <img  src={item.data.location} alt="Not found" style={{width:"100%"}}/>
                                         <div>{item.data.name}</div>
                                         <div>{item.data.price}</div>
                                         <div style={{display:'flex',alignItems:'center'}}>

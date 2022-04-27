@@ -32,7 +32,7 @@ class Main extends Component {
         this.state.cart.forEach((item) => {
             if(item.key === product.key)flag = true;
         })
-        product.data.quantity = 1
+        // product.data.quantity = 1
         if(!flag){
            
            await this.setState(
@@ -103,7 +103,7 @@ class Main extends Component {
 
                 <b> <h1 style={{textAlign:"center",margin:"10px"}}>Our Products</h1></b>
                 <hr/>
-                <Items  add={this.additem} cart = {this.state.cart}/>
+                <Items  add={this.additem} cart = {this.state.cart}/>          
             </div>
         )
     }

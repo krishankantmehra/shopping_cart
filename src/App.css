@@ -79,14 +79,15 @@ body{
   transition: 100ms ease;
 }
 
-
+.detailImg{
+  height: 200px;
+  object-fit: contain;
+}
 .card:hover {
   border: 1px solid black;
   padding: 10px;
 }
-.card:hover img{
-  opacity: 0.5;
-}
+
 .card:hover button{
   opacity: 100%;
 }

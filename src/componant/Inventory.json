@@ -6,7 +6,11 @@
             "price":35000,
             "quantity":1,
             "location":"/images/img1.jpg"
-        }
+        },
+        "details":[
+            ["name","Samsung galaxy"],
+            ["price",35000]
+        ]
     },
     {
         "key":2,
@@ -15,25 +19,37 @@
             "price":50000,
             "quantity":1,
             "location":"/images/img2.jpg"
-        }
+        },
+        "details":[
+            ["name","iPhone"],
+            ["price",50000]
+        ]
     },
     {
         "key":3,
         "data":{
-            "name":"Sony 80cm",
+            "name":"Sony TV",
             "price":32000,
             "quantity":1,
             "location":"/images/img3.jpg"
-        }
+        },
+        "details":[
+            ["name","Sony TV"],
+            ["price",32000]
+        ]
     },
     {
         "key":4,
         "data":{
-            "name":"Mi 61cm",
+            "name":"Mi TV",
             "price":32000,
             "quantity":1,
             "location":"/images/img4.jpg"
-        }
+        },
+        "details":[
+            ["name","Mi TV"],
+            ["price",32000]
+        ]
     },
     {
         "key":5,
@@ -42,7 +58,11 @@
             "price":40000,
             "quantity":1,
             "location":"/images/img5.jpg"
-        }
+        },
+        "details":[
+            ["name","HP"],
+            ["price",40000]
+        ]
     },
     {
         "key":6,
@@ -51,6 +71,10 @@
             "price":43000,
             "quantity":1,
             "location":"/images/img6.jpg"
-        }
+        },
+        "details":[
+            ["name","Lenovo"],
+            ["price",43000]
+        ]
     }
 ]
