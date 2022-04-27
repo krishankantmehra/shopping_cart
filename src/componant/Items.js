@@ -55,7 +55,7 @@ function Items(props){
                                     </div>
                                 </div>
                                 <div className="modal-footer">
-                                    <button className="btn btn-primary" onClick={()=>props.add(item)} >Add to cart</button>
+                                    <button className="btn btn-primary"  >Add to cart</button>
                                     <button className="btn btn-secondary">Close</button>
                                 </div>
                             </div>
