@@ -1,6 +1,7 @@
 [
     {
         "key":1,
+        "inCart":0,
         "data":{
             "name":"Samsung galaxy",
             "price":35000,
@@ -14,6 +15,7 @@
     },
     {
         "key":2,
+        "inCart":0,
         "data":{
             "name":"iPhone",
             "price":50000,
@@ -27,6 +29,7 @@
     },
     {
         "key":3,
+        "inCart":0,
         "data":{
             "name":"Sony TV",
             "price":32000,
@@ -40,6 +43,7 @@
     },
     {
         "key":4,
+        "inCart":0,
         "data":{
             "name":"Mi TV",
             "price":32000,
@@ -53,6 +57,7 @@
     },
     {
         "key":5,
+        "inCart":0,
         "data":{
             "name":"Hp",
             "price":40000,
@@ -66,6 +71,7 @@
     },
     {
         "key":6,
+        "inCart":0,
         "data":{
             "name":"Lenovo",
             "price":43000,

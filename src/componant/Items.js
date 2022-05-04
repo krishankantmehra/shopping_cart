@@ -3,23 +3,30 @@ import Inventory from './Inventory.json';
 
 
 function Items(props){
-      
+     function cartadd(){
+         const data = JSON.parse(localStorage.getItem("data"))
+        console.log(data)
+        if(data === null)return;
+        data.forEach(element => {
+            document.getElementById("cartadd" + element.key).innerText = "ALREADY IN CART"
+            document.getElementById("cartadd" + element.key).disabled = true;
+        });
+      }
     
        return ( 
         
-          <div className="Products">
+          <div className="Products" >
                {Inventory.map((item,i) => (
                    
-                    <div className="card shadow m-3"  data-bs-toggle="modal" data-bs-target = {"#details" + item.key}  key={i}>
-                        
-                        {/* <button  className="addToCart shadow" data-bs-toggle="modal" data-bs-target = "#details" onClick={()=>props.add(item)} >Add</button> */}
-                        
+                    <div className="Card shadow m-3"  data-bs-toggle="modal" data-bs-target = {"#details" + item.key} onClick={()=>cartadd()} key={i}>
+                
                         {/* modal */}
-                        <div className="modal fade" id ={"details" +item.key} tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div className="modal fade" id ={"details" +item.key} tabIndex="-1" aria-labelledby={"details" +item.key}  aria-hidden = "true">
                             <div className="modal-dialog">
                             <div className="modal-content">
                                 <div className="modal-header">
-                                    Item details
+                                   <h5 className="modal-title">ITEM DETAILS</h5>
+                                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div className="modal-body">
                                     <img src={item.data.location} className="detailImg" alt="not found"></img>
@@ -37,18 +44,19 @@ function Items(props){
                                     </div>
                                 </div>
                                 <div className="modal-footer">
-                                    <button  className="btn btn-primary" onClick={()=>props.add(item)} >Add to cart</button>
+                                    <button  className="btn btn-primary" id={"cartadd" + item.key} onClick={()=>props.add(item)} >Add to cart</button>
                                     <button className="btn btn-secondary">Close</button>
                                 </div>
                             </div>
                             </div>
                         </div>
 
-                        <div id="cardBody"> 
+
+                        <div className="cardBody"> 
                         <img src={item.data.location}  className="card-img-top image" alt="Not found"/>
-                        <div className="card-body">
+                        <div className="card-body align-text-bottom my-auto">
                             <h5 className="card-title">{item.data.name}</h5>
-                            <p id="itemPrice"><b>Rs. {item.data.price}</b></p>
+                            <p className="itemPrice"><b>Rs. {item.data.price}</b></p>
                             
                         </div>
                         </div>

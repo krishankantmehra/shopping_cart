@@ -62,7 +62,7 @@ body{
   width: 90vw;
 }
 
-#itemPrice{
+.itemPrice{
   color: var(--primaryColor);
 }
 .Products{
@@ -72,9 +72,7 @@ body{
   grid-row-gap: 10px;
   justify-content: space-around;
 }
-.card{
-  
-   text-align: center;
+.Card{
   border: 1px solid rgb(182, 182, 182);
   transition: 100ms ease;
 }
@@ -83,12 +81,15 @@ body{
   height: 200px;
   object-fit: contain;
 }
-.card:hover {
+.Card:hover {
   border: 1px solid black;
   padding: 10px;
 }
 
-
+.cardBody{
+  height: 100%;
+ 
+}
 
 
 .addToCart{

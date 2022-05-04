@@ -32,7 +32,7 @@ class Main extends Component {
         this.state.cart.forEach((item) => {
             if(item.key === product.key)flag = true;
         })
-        // product.data.quantity = 1
+      
         if(!flag){
            
            await this.setState(
@@ -84,7 +84,7 @@ class Main extends Component {
 
     remove = (id)=>{
         let temp = this.state.cart;
-        
+    
         temp.splice(id,1);
         this.setState(
             {
