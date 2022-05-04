@@ -84,7 +84,6 @@ class Main extends Component {
 
     remove = (id)=>{
         let temp = this.state.cart;
-    
         temp.splice(id,1);
         this.setState(
             {
