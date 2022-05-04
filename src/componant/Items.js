@@ -20,8 +20,7 @@ class Items extends React.Component {
       }
     
       render(){
-        return ( 
-        
+        return (  
             <div className="Products" >
                  {Inventory.map((item,i) => (
                      
