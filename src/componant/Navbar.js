@@ -8,13 +8,14 @@ class Navbar extends Component{
        return(
         <div className="mynav">
          <div className="container-fluid navbar navbar-expand-md navbar-light bg-white fixed-top justify-content-between shadow-lg" style={{fontSize:"1.5em"}}>
-             <div>
-                 <i className="fa fa-bars"></i>
-             </div>
-             <div><b>Comphy Life</b></div>
+             
+             <div id="LOGO" className='d-flex flex-row justify-content-center align-items-center'>
+                <img id="logo-img" src="logo.png" alt="NOT FOUND"/>
+                <p><b>Comphy Life</b></p>
+            </div>
                 <div>
                 
-                    <button type="button" className="btn1 sticky-top" style={{fontSize:"1.1em",padding:"4px",float:"right"}}data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button type="button" id="CART" className="btn1 sticky-top" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <i className="fa fa-shopping-cart"></i>
                     </button>
 

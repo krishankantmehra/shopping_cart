@@ -1,5 +1,6 @@
 import React from "react";
 import Inventory from './Inventory.json';
+import Model from "./model";
 
 
 class Items extends React.Component {
@@ -27,7 +28,8 @@ class Items extends React.Component {
                       <div className="Card shadow m-3"  data-bs-toggle="modal" data-bs-target = {"#details" + item.key} onClick={()=>this.cartadd()} key={i}>
                   
                           {/* modal */}
-                          <div className="modal fade" id ={"details" +item.key} tabIndex="-1" aria-labelledby={"details" +item.key}  aria-hidden = "true">
+                          <Model item = {item} add={this.props.add}/>
+                          {/* <div className="modal fade" id ={"details" +item.key} tabIndex="-1" aria-labelledby={"details" +item.key}  aria-hidden = "true">
                               <div className="modal-dialog">
                               <div className="modal-content">
                                   <div className="modal-header">
@@ -55,7 +57,7 @@ class Items extends React.Component {
                                   </div>
                               </div>
                               </div>
-                          </div>
+                          </div> */}
   
   
                           <div className="cardBody"> 
