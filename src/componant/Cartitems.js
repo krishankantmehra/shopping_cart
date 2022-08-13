@@ -44,7 +44,9 @@ class Cartitem extends Component{
                                             </button>
 
                                         </div>
-                                        <button style={{background:'white',padding:'0px',border:"0px",color:"gray"}} onClick={()=>this.props.rem(i)}>remove</button>
+                                        <button style={{background:'white',padding:'0px',border:"0px",color:"gray"}} onClick={()=>this.props.rem(i)}>
+                                            <i className='fa fa-trash-o'/>
+                                        </button>
                                         
                                        
                                    </div>
