@@ -110,15 +110,13 @@ body{
    background-color: transparent;
    border: none;
 }
-#LOGO{
-  margin-left:40%;
-}
+
 #LOGO p{
   font-size: 1.3em;
   margin-bottom: 0px;
 }
 #logo-img{
-  height: 50px;
+  height: 60px;
   border-radius: 50%;
   margin-right: 15px;
 }
@@ -161,4 +159,7 @@ body{
 }
 .card-img-top:hover{
   padding: 10px;
+}
+.Details{
+  font-size: 1.4em;
 }

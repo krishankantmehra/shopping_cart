@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import Crousel from '../componant/Crousel';
-import Navbar from '../componant/Navbar';
-import Items from '../componant/Items'
+import Crousel from './Crousel';
+import Navbar from './Navbar';
+import Items from './Items'
 class Main extends Component {
     constructor(){
         super()

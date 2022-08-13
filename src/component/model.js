@@ -11,10 +11,12 @@ class Model extends Component {
                                      <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                   </div>
                                   <div className="modal-body">
+                                      <div className='d-flex flex-row justify-content-center mb-5'>
                                       <img src={this.props.item.data.location} className="detailImg" alt="not found"></img>
+                                      </div>
                                       <div>
                                           {this.props.item.details.map((s,i) => (
-                                              <div key={i} className="text-center d-flex flex-row justify-content-between">
+                                              <div key={i} className="Details d-flex flex-row justify-content-between">
                                                   <div  className="col-6 text-capitalize text-start">
                                                       <b>{s[0]}</b>
                                                   </div>
