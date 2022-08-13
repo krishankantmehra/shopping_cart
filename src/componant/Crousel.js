@@ -5,7 +5,7 @@ class Crousel extends Component{
     render(){
         return (
             <div className="crousel">
-            <div id="carouselExampleControls" className="carousel slide " data-bs-ride="carousel" style={{backgroundColor:'#e68600'}}>
+            <div id="carouselExampleControls" className="carousel slide " data-bs-ride="carousel" >
             <div className="carousel-inner">
               <div className="carousel-item active ">
                 <img src= "images/crousel_images/img_1.jpg"

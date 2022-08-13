@@ -99,7 +99,7 @@ class Main extends Component {
             <div>
                 <Navbar cart = {this.state.cart} close={this.clearCart} inc={this.increment} dec={this.decrement} rem={this.remove}/>
                 <Crousel/>
-
+                <hr/>
                 <b> <h1 style={{textAlign:"center",margin:"10px"}}>Our Products</h1></b>
                 <hr/>
                 <Items  add={this.additem} cart = {this.state.cart}/>          

@@ -26,7 +26,7 @@ class Model extends Component {
                                       </div>
                                   </div>
                                   <div className="modal-footer">
-                                      <button  className="btn btn-primary" id={"cartadd" + this.props.item.key} onClick={()=>this.props.add(this.props.item)} >Add to cart</button>
+                                      <button  className="btn btn-primary" id={"cartadd" + this.props.item.key} onClick={()=>this.props.add(this.props.item)} ></button>
                                       <button className="btn btn-secondary">Close</button>
                                   </div>
                               </div>

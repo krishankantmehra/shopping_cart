@@ -1,9 +1,10 @@
 :root{
-  --primaryColor:#e68600;
+  --primaryColor:#e68600; 
 }
 body{
   word-wrap:break-word;
   font-size: minmax(10px,20px);
+  font-family: sans-serif;
 }
 
 @media screen and (max-width:520px) {
@@ -21,7 +22,8 @@ body{
   display: flex;
   align-self: center;
   justify-content: space-around;
-  margin-top:50px;
+  margin-top:60px;
+  background-color: var(--primaryColor);
 }
 
 
@@ -45,16 +47,16 @@ body{
 }
 
 .modal-header{
-  color: #e68600;
+  color: var(--primaryColor);
 }
 
 #cartSize{
   position: absolute;
-  font-size: small;
-  background-color: var(--primaryColor);
+  font-size: 15px;
+  background-color:var(--primaryColor);
   padding: 0px 3px 0px 3px;
   border-radius: 5px;
-  transform: translateX(20px) translateY(2px);
+  transform: translateX(25px) translateY(2px);
 }
 #exampleModal{
   font-size: 1.5em;
@@ -84,7 +86,6 @@ body{
 }
 .Card:hover {
   border: 1px solid black;
-  padding: 10px;
 }
 
 .cardBody{
@@ -102,16 +103,18 @@ body{
   border: none;
   z-index: 1;
 }
-
+.total{
+  background: var(--primaryColor);
+}
 .btn1 {
    background-color: transparent;
    border: none;
 }
 #LOGO{
-  margin-left: 40vw;
+  margin-left:40%;
 }
 #LOGO p{
-  font-size: 1.2em;
+  font-size: 1.3em;
   margin-bottom: 0px;
 }
 #logo-img{
@@ -155,4 +158,7 @@ body{
 .card-img-top{
   height: 80%;
   object-fit: contain;
+}
+.card-img-top:hover{
+  padding: 10px;
 }

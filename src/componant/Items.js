@@ -29,36 +29,6 @@ class Items extends React.Component {
                   
                           {/* modal */}
                           <Model item = {item} add={this.props.add}/>
-                          {/* <div className="modal fade" id ={"details" +item.key} tabIndex="-1" aria-labelledby={"details" +item.key}  aria-hidden = "true">
-                              <div className="modal-dialog">
-                              <div className="modal-content">
-                                  <div className="modal-header">
-                                     <h5 className="modal-title">ITEM DETAILS</h5>
-                                     <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                  </div>
-                                  <div className="modal-body">
-                                      <img src={item.data.location} className="detailImg" alt="not found"></img>
-                                      <div>
-                                          {item.details.map((s,i) => (
-                                              <div key={i} className="text-center d-flex flex-row justify-content-between">
-                                                  <div  className="col-6 text-capitalize text-start">
-                                                      <b>{s[0]}</b>
-                                                  </div>
-                                                  <div className="col-6 text-end">
-                                                      {s[1]}
-                                                  </div>
-                                              </div>
-                                          ))}
-                                      </div>
-                                  </div>
-                                  <div className="modal-footer">
-                                      <button  className="btn btn-primary" id={"cartadd" + item.key} onClick={()=>this.props.add(item)} >Add to cart</button>
-                                      <button className="btn btn-secondary">Close</button>
-                                  </div>
-                              </div>
-                              </div>
-                          </div> */}
-  
   
                           <div className="cardBody"> 
                           <img src={item.data.location}  className="card-img-top image" alt="Not found"/>

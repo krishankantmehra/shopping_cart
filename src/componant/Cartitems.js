@@ -57,8 +57,8 @@ class Cartitem extends Component{
                         </div>
 
                         <div>
-                        <div style={{background:'orange'}} className="container">
-                            <span style={{marginRight:"100px"}}>totalPrice</span>
+                        <div className="container d-flex flex-row justify-content-between total">
+                            <span >totalPrice</span>
                             <span >{totalPrice}</span>
                         </div>
                         </div>

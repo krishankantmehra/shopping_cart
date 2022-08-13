@@ -82,5 +82,34 @@
             ["name","Lenovo"],
             ["price",43000]
         ]
+    },
+    {
+        "key":7,
+        "inCart":0,
+        "data":{
+            "name":"PS5",
+            "price":45000,
+            "quantity":1,
+            "location":"/images/img7.jpg"
+        },
+        "details":[
+            ["name","PS5"],
+            ["price",45000]
+        ]
+    },
+    {
+        "key":8,
+        "inCart":0,
+        "data":{
+            "name":"Xbox",
+            "price":48000,
+            "quantity":1,
+            "location":"/images/img8.jpg"
+        },
+        "details":[
+            ["name","Xbox"],
+            ["price",48000]
+        ]
     }
+    
 ]
