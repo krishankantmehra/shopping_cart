@@ -163,3 +163,27 @@ body{
 .Details{
   font-size: 1.4em;
 }
+.footer-body{
+  background-color: var(--primaryColor);
+  color: white;
+}
+.contact-links{
+  font-size: 2em;
+  color: white;
+  margin:10px;
+  background-color: gray;
+  padding: 0px 10px 0px 10px;
+  border-radius: 50%;
+}
+#googleLink:hover{
+  background-color: red;
+  color: white;
+}
+#githubLink:hover{
+  color: white;
+  background-color: black;
+}
+#linkedinLink:hover{
+  color: white;
+  background-color: blue;
+}

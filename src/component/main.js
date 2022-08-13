@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Crousel from './Crousel';
 import Navbar from './Navbar';
 import Items from './Items'
+import Footer from './Footer'
 class Main extends Component {
     constructor(){
         super()
@@ -102,7 +103,8 @@ class Main extends Component {
                 <hr/>
                 <b> <h1 style={{textAlign:"center",margin:"10px"}}>Our Products</h1></b>
                 <hr/>
-                <Items  add={this.additem} cart = {this.state.cart}/>          
+                <Items  add={this.additem} cart = {this.state.cart}/>        
+                <Footer />  
             </div>
         )
     }
