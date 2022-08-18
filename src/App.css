@@ -84,9 +84,14 @@ body{
   height: 200px;
   object-fit: contain;
 }
-.Card:hover {
+.Card:hover .card-img-top{
+  padding: 10px;
+
+}
+.Card:hover{
   border: 1px solid black;
 }
+
 
 .cardBody{
   height: 100%;
@@ -157,9 +162,7 @@ body{
   height: 80%;
   object-fit: contain;
 }
-.card-img-top:hover{
-  padding: 10px;
-}
+
 .Details{
   font-size: 1.4em;
 }
